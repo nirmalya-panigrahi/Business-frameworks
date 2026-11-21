@@ -490,10 +490,17 @@ export default function App() {
                           href="https://nirmalya-panigrahi.github.io/Strategic-consultant/"
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="inline-block text-[30px] xl:text-[36px] font-black text-slate-200/80 hover:text-indigo-400/80 leading-[0.95] uppercase tracking-tighter transition-colors"
+                          className="group flex flex-col items-center gap-1.5 opacity-30 hover:opacity-95 transition-all duration-300"
                           title="Ask a consultant about this"
                         >
-                          Ask a<br />Consultant<br />About This
+                          <img
+                            src="/assets/aistudio/image_0bd03415.png"
+                            alt="Ask a consultant about this"
+                            className="w-40 xl:w-48 h-auto object-contain mix-blend-multiply group-hover:scale-105 transition-transform duration-300"
+                          />
+                          <span className="text-[10px] font-black uppercase tracking-widest text-slate-400 group-hover:text-indigo-600 transition-colors">
+                            Ask a consultant about this
+                          </span>
                         </a>
                       </div>
                     </div>
