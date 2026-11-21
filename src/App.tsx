@@ -1472,7 +1472,7 @@ const FrameworkVisualizer: React.FC<{
         );
       case 'matrix':
         return (
-          <div className={`grid w-full max-w-6xl grid-cols-1 ${isMobile ? 'gap-4' : 'grid-cols-2 gap-8'} min-h-[50vh]`}>
+          <div className={`grid w-full max-w-6xl grid-cols-1 ${isMobile ? 'gap-4' : framework.sections.length === 9 ? 'md:grid-cols-3 gap-6' : 'grid-cols-2 gap-8'} min-h-[50vh]`}>
             {framework.sections.map((section, idx) => {
               const borderColors = ['border-t-blue-500', 'border-t-indigo-500', 'border-t-emerald-500', 'border-t-amber-500'];
               return (
