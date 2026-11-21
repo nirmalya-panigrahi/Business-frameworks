@@ -485,10 +485,16 @@ export default function App() {
                           Access over 100+ professional frameworks for strategy, innovation, problem-solving, and change management. All visualizations are fully interactive and research-backed.
                         </p>
                       </div>
-                      <div className="text-right hidden lg:block">
-                        <div className="text-[40px] font-black text-slate-100 leading-none uppercase tracking-tighter">
-                          Platform<br/>v.2.0.4
-                        </div>
+                      <div className="text-right hidden lg:block shrink-0">
+                        <a
+                          href="https://nirmalya-panigrahi.github.io/Strategic-consultant/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-block text-[30px] xl:text-[36px] font-black text-slate-200/80 hover:text-indigo-400/80 leading-[0.95] uppercase tracking-tighter transition-colors"
+                          title="Ask a consultant about this"
+                        >
+                          Ask a<br />Consultant<br />About This
+                        </a>
                       </div>
                     </div>
 
@@ -531,29 +537,38 @@ export default function App() {
                       ))}
                     </div>
 
-                    <div className="mt-12 md:mt-24 pt-12 border-t border-slate-100 flex flex-col lg:flex-row items-center lg:items-end justify-between gap-12">
-                      <div className="flex flex-wrap justify-center lg:justify-start items-center gap-8 md:gap-16">
-                        <div className="flex flex-col">
-                          <span className="text-[10px] font-black text-slate-400 uppercase tracking-widest mb-1">Active Users</span>
-                          <span className="text-2xl md:text-3xl font-black text-slate-900 tracking-tighter">14.2k</span>
+                    <div className="mt-12 md:mt-24 pt-10 border-t border-slate-100">
+                      <a
+                        href="https://nirmalya-panigrahi.github.io/Strategic-consultant/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="group flex flex-col sm:flex-row items-center justify-between gap-6 p-6 md:p-8 rounded-3xl border border-slate-200/80 bg-gradient-to-r from-indigo-50/60 via-white to-amber-50/40 hover:border-indigo-300 hover:shadow-[0_24px_48px_-16px_rgba(79,70,229,0.14)] transition-all"
+                      >
+                        <div className="flex flex-col sm:flex-row items-center gap-5 text-center sm:text-left">
+                          <div className="w-20 h-20 md:w-24 md:h-24 shrink-0 rounded-2xl bg-white border border-slate-100 shadow-sm p-1.5 flex items-center justify-center overflow-hidden group-hover:scale-105 transition-transform">
+                            <img
+                              src="/assets/aistudio/image_8a6e40c2.png"
+                              alt="Strategic Consultant"
+                              className="w-full h-full object-contain"
+                            />
+                          </div>
+                          <div className="space-y-1.5">
+                            <div className="text-[10px] font-black uppercase tracking-widest text-indigo-600">
+                              Interactive Framework Finder
+                            </div>
+                            <h4 className="text-xl md:text-2xl font-black text-slate-900 tracking-tight group-hover:text-indigo-700 transition-colors">
+                              Not sure which framework fits? Ask our consultant about it
+                            </h4>
+                            <p className="text-sm text-slate-500 font-medium max-w-xl">
+                              Answer a few quick strategic questions and let our Akinator-style consultant recommend the ideal framework for your challenge.
+                            </p>
+                          </div>
                         </div>
-                        <div className="flex flex-col">
-                          <span className="text-[10px] font-black text-slate-400 uppercase tracking-widest mb-1">Frameworks</span>
-                          <span className="text-2xl md:text-3xl font-black text-slate-900 tracking-tighter">{FRAMEWORKS.length}</span>
+                        <div className="shrink-0 flex items-center gap-2 px-5 py-3 rounded-xl bg-indigo-600 group-hover:bg-indigo-700 text-white text-xs font-black uppercase tracking-wider shadow-md shadow-indigo-200 transition-all">
+                          <span>Ask Consultant</span>
+                          <ArrowRight size={15} className="group-hover:translate-x-1 transition-transform" />
                         </div>
-                        <div className="flex flex-col">
-                          <span className="text-[10px] font-black text-slate-400 uppercase tracking-widest mb-1">Decisions Made</span>
-                          <span className="text-2xl md:text-3xl font-black text-slate-900 tracking-tighter">1.4M+</span>
-                        </div>
-                      </div>
-                      <div className="flex flex-col items-center lg:items-end gap-2">
-                         <div className="flex items-center gap-1.5 px-3 py-1 bg-slate-900 rounded text-white text-[8px] font-bold tracking-[0.2em] uppercase">
-                            Enterprise Ready <motion.div animate={{ opacity: [1, 0.4, 1] }} transition={{ duration: 1, repeat: Infinity }} className="w-1.5 h-1.5 rounded-full bg-emerald-400" />
-                         </div>
-                         <div className="text-[10px] font-bold text-slate-400">
-                           DESIGNED BY <span className="text-slate-900">NIRMALYA PANIGRAHI</span>
-                         </div>
-                      </div>
+                      </a>
                     </div>
                   </div>
                 </motion.div>
